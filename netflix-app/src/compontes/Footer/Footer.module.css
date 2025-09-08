@@ -48,3 +48,24 @@
   text-align: center;
   color: #666;
 }
+.iconList {
+  display: flex;
+  /* justify-content: center; */
+  gap: 0.4rem;
+  list-style: none;
+  /* padding: 0px; */
+  margin: 8px;
+  margin-left: 5px;
+}
+
+.iconList li a {
+  color: white;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.iconList li a:hover {
+  color: #1da1f2; 
+  transform: scale(1.2);
+}
+

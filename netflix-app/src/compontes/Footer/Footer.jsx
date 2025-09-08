@@ -1,5 +1,8 @@
 import styles from './Footer.module.css';
 import CopyrightOutlinedIcon from '@mui/icons-material/CopyrightOutlined';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import TwitterIcon from '@mui/icons-material/Twitter';
 
 const Footer = () => {
   return (
@@ -26,12 +29,34 @@ const Footer = () => {
           <select name="language">
             <option value="en">English</option>
             <option value="Amharic">Amharic</option>
-          </select>
+            
+          </select>  <ul className={styles.iconList}>
+  <li>
+    <a href="#" aria-label="Instagram">
+      <InstagramIcon />
+    </a>
+  </li>
+  <li>
+    <a href="#" aria-label="Facebook">
+      <FacebookIcon />
+    </a>
+  </li>
+  <li>
+    <a href="#" aria-label="Twitter">
+      <TwitterIcon />
+    </a>
+  </li>
+</ul>
+          
         </div>
 
         <div className={styles.footer_copy}>
-          <p> <CopyrightOutlinedIcon style={{ fontSize: 16, color: '#888', verticalAlign: 'middle' }} /> {new Date().getFullYear()} Netflix Clone by You</p>
+          <p> <CopyrightOutlinedIcon style={{ fontSize: 16, color: '#888', verticalAlign: 'middle' }} /> {new Date().getFullYear()} Netflix Clone</p>
+          
         </div>
+     
+
+        
       </div>
     </footer>
   );

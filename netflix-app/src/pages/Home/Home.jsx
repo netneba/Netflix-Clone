@@ -4,6 +4,12 @@ const Home = () => {
   return (
     <>
       <Header/>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      main body 
       <Footer/>
     </>
   )

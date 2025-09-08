@@ -1,65 +1,48 @@
 .header_outer_container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 10vh;
-    background-color: rgba(20, 20, 20, 0.9);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 20px;
-    z-index: 1;
-    color: white;
-    transition: all 0.5s ease-in;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10vh;
+  background-color: rgba(20, 20, 20, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 1000;
+  color: white;
+  transition: all 0.5s ease-in;
 }
 
 .header_container {
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav_links,
 .nav_icons {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    margin: 0;
-    padding: 0;
-    align-items: center;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
 }
 
 .nav_links li,
 .nav_icons li {
-    cursor: pointer;
-    transition: color 0.3s ease;
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
 
 .nav_links li:hover,
 .nav_icons li:hover {
-    color: #b3b3b3;
+  color: #b3b3b3;
 }
 
 .header_right {
-    display: flex;
-    align-items: center;
-}
-
-
-@media (max-width: 768px) {
-    .nav_links {
-        gap: 10px;
-        font-size: 14px;
-    }
-
-    .nav_icons {
-        gap: 10px;
-    }
-
-    .header_outer_container {
-        padding: 0 10px;
-        height: 60px;
-    }
+  display: flex;
+  align-items: center;
 }

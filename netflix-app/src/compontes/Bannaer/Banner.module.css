@@ -7,7 +7,7 @@
   position: relative;
   background-size: cover;
   background-position: center center;
-  padding-top: 300px;
+  padding-top: 400px;
 
 }
 
@@ -63,4 +63,24 @@
     rgba(37, 37, 37, 0.61),
     #111
   );
+}
+
+
+@media (max-width: 768px) {
+  .banner {
+    height: 60%;
+    padding: 1px;
+  }
+
+  .bannerTitle {
+    font-size: 2rem;
+    font-weight: 800;
+    padding-bottom: 0.3rem;
+
+  }
+
+  .bannerDescription {
+    font-size: 0.8rem;
+    max-width: 90%;
+  }
 }

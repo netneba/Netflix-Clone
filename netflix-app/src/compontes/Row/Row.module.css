@@ -1,36 +1,35 @@
 
-
 .row {
-  /* margin-left: 20px; */
   background-color: rgb(20, 20, 20);
   color: #fff;
-    /* margin-top: 20px; */
 }
 
 .title {
   font-size: 1.2rem;
-  /* margin-bottom: 10px; */
 }
 
 .posters {
   display: flex;
   overflow-y: hidden;
   overflow-x: scroll;
-  overflow-x: hidden;
-  /* padding-bottom: 10px; */
+  /* overflow-x: hidden; */
+  scroll-behavior: smooth;
 }
 
 .poster {
   max-height: 100px;
   object-fit: contain;
-  /* margin-right: 10px; */
+  margin-right: 5px;
   transition: transform 0.2s ease;
 }
-
+.posters::-webkit-scrollbar {
+  display: none;
+}
 .poster:hover {
   transform: scale(1.08);
 }
 
 .largePoster {
   max-height:50%;
-}
+} 
+

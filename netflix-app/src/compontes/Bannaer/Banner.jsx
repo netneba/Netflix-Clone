@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import myInstance from '../../Utils/axios';
+import axios from '../../Utils/axios';
 import requests from '../../Utils/requests';
 import styles from './banner.module.css';
 
@@ -9,7 +9,7 @@ const Banner=() =>{
   useEffect(() => {
     async function fetchData() {
       try {
-        const request = await myInstance.get(requests.fetchNetflixOriginals);
+        const request = await axios.get(requests.fetchNetflixOriginals);
         const results = request.data.results;
         // console.log( request);
         // console.log(results);
